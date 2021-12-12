@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+  }
+  body{
+    font-size:20px;
+    font-family:  sans-serif;
+  }
+  h1, h2, h3,h4,h5,h6{
+    text-transform:capitalize;
+    text-align:center;
+  }
+  h4{
+    color:red;
+  }
+  .design{
+    width:100%;
+    height:15vh;
+    background-color: #000;
+   display: flex;
+  }
+  .logo{
+    background-color: #2266ee;
+    width: 30%;
+    height:100%;
+    color:#fff;
+    padding:10px;
+    border-bottom:2px solid black;
+    -webkit-transform: translateY(-15px) translateX(0px) rotate(-20deg);
+    transition:all 0.3s linear;
+  }
+  .logo-2{
+      -webkit-transform: translateY(-15px) translateX(0px) rotate(20deg);
+    transition:all 0.3s linear;
+  }
+  .title2{
+    width: 70%;
+    height: 100%;
+    color:white;
+    background-color: #000;
+    text-align:center;
+    padding: 10px;
+  }
+  .title{
+    padding:10px;
+    text-align:center;
+    font-size:30px;
+  }
+  .title h1{
+    background-image: url("https://images.unsplash.com/photo-1602427670924-d4942df40999?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW1icmVsbGFzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    -webkit-background-clip:text;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color:transparent;
+  }
+  .container{
+    width:90%;
+    height:90%;
+    margin:0 auto;
+    padding:20px;
+   
+  }
+  form{
+    display:grid;
+    grid-template-columns:50% 50%;
+    justify-content:space-around;
+    grid-gap: 30px;
+  }
+  form div{
+    padding: 10px;
+  }
+  form label{
+    display: block;
+    font-size:20px;
+    font-weight: bold;
+    padding:10px;
+    color: #2266ee;
+  }
+  form  input{
+    width:100%;
+    padding:10px 50px;
+    border-radius:8px;
+     outline:none;
+  }
+  form input[type="text"]{
+    text-transform:capitalize;
+    font-weight:bold;
+    font-size:20px;
+    letter-spacing: 1.3px;
+  }
+  form input:focus , textarea:focus{
+    border: 2px solid red;
+  }
+  .rightside div, .rightside > div > div {
+    position:relative;
+  }
+  form i{
+    position:absolute;
+    margin:10px 15px;
+    text-align:center;
+  /*   bottom:0px; */
+  }
+  .fa-exclamation-circle , .fa-check-circle{
+    right:0;
+    opacity: 0;
+  }
+  .fa-exclamation-circle{
+    color: red;
+  }
+  .fa-check-circle{
+    color: green;
+  }
+  textarea{
+    outline:none;
+  }
+  #submit{
+    background:red;
+    color:white;
+    padding:10px;
+    width:100%;
+    font-size:25px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    border-radius:8px;
+    transition:all 0.3s linear;
+  }
+  #submit:hover{
+    background-color: green;
+  }
+  .newClass{
+    opacity: 1;
+  }
+  .secondClass{
+    opacity:0;
+  }
+  /* media querries */
+  
+  @media(max-width:425px){
+    form{
+      display:block;
+    }
+  }
