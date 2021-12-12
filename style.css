@@ -99,7 +99,7 @@
     position:absolute;
     margin:10px 15px;
     text-align:center;
-  /*   bottom:0px; */
+ 
   }
   .fa-exclamation-circle , .fa-check-circle{
     right:0;
@@ -132,12 +132,10 @@
   .newClass{
     opacity: 1;
   }
-  .secondClass{
-    opacity:0;
-  }
+ 
   /* media querries */
   
-  @media(max-width:425px){
+  @media(max-width:600px){
     form{
       display:block;
     }
